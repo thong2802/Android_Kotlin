@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_layer_login"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnback"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login" />
+
+    <TextView
+        android:id="@+id/textlogin"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_layer_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Register"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/manrope_bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E1E3DD"
+        android:drawableLeft="@drawable/mail"
+        android:drawableTint="#A8B2B8"
+        android:fontFamily="@font/manrope_regular"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/shape_cursor"
+        android:textSize="15sp"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlogin" />
+
+    <EditText
+        android:id="@+id/mailregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E1E3DD"
+        android:drawableLeft="@drawable/mail"
+        android:drawableTint="#A8B2B8"
+        android:fontFamily="@font/manrope_regular"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/shape_cursor"
+        android:textSize="15sp"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textpasswordresgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailregister"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#E1E3DD"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="20dp"
+            android:drawableTint="#A8B2B8"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/shape_cursor"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textconfigpasswordresgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpasswordresgister"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/configpasswordresgister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#E1E3DD"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="20dp"
+            android:drawableTint="#A8B2B8"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/shape_cursor"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/resgisterbtn"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/manrope_bold"
+        android:background="@drawable/shape_button1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textconfigpasswordresgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoardAdminActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbaruse"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_dashbroaduser"
+        android:layout_height="?actionBarSize"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/titletTV"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="DashBroad Admin"
+            android:fontFamily="@font/manrope_bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/subTittleTV"
+            android:layout_below="@+id/titletTV"
+            android:layout_centerHorizontal="true"
+            android:text="ducthong@gmail.com"
+            android:textSize="15dp"
+            android:fontFamily="@font/manrope_regular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/logoutbtn"
+            android:text="Logout"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/logout"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <!-- Botton layout-->
+    <LinearLayout
+        android:id="@+id/bottonlieaner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/addCategroryBtn"
+            android:background="@drawable/shape_button1"
+            android:text="+ Add CateGory"
+            android:minHeight="50dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/manrope_bold"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addPdfFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3376BC"
+            app:fabCustomSize="50dp"
+            android:tint="@color/white"
+            android:src="@drawable/iconpdf"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

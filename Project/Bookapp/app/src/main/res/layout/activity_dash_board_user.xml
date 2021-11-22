@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoardUserActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbaruse"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_dashbroaduser"
+        android:layout_height="?actionBarSize"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/titletTV"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="DashBroad User"
+            android:fontFamily="@font/manrope_bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/subTittleTV"
+            android:layout_below="@+id/titletTV"
+            android:layout_centerHorizontal="true"
+            android:text="ducthong@gmail.com"
+            android:textSize="15dp"
+            android:fontFamily="@font/manrope_regular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/logoutbtn"
+            android:text="Logout"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/logout"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
